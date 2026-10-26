@@ -1,0 +1,9 @@
+{
+  "name": "mailshield",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MailShield: prototipo de extensión para detectar correos de phishing en Gmail.",
+  "scripts": {
+    "test": "node tests/phishingDetector.test.js"
+  }
+}

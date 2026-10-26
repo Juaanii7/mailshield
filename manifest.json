@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "MailShield",
+  "version": "1.0.0",
+  "description": "Extensión para detectar correos fraudulentos en Gmail.",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://mail.google.com/*"
+  ],
+  "action": {
+    "default_title": "MailShield",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/mailshield-16.svg",
+      "48": "icons/mailshield-48.svg",
+      "128": "icons/mailshield-128.svg"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mail.google.com/*"
+      ],
+      "js": [
+        "phishingDetector.js",
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/mailshield-16.svg",
+    "48": "icons/mailshield-48.svg",
+    "128": "icons/mailshield-128.svg"
+  }
+}

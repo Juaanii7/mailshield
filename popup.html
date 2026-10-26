@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MailShield</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="popup-shell">
+      <header class="topbar">
+        <div class="brand-group">
+          <div class="brand-badge">M</div>
+          <div>
+            <div class="brand-name">MailShield</div>
+            <div class="brand-subtitle">Protección para Gmail</div>
+          </div>
+        </div>
+      </header>
+
+      <section class="status-box">
+        <div class="status-label">Estado</div>
+        <div id="statusValue" class="status-value">Activo</div>
+      </section>
+
+      <section class="settings-box">
+        <label class="toggle-row" for="autoAnalyzeToggle">
+          <span>Análisis automático</span>
+          <input id="autoAnalyzeToggle" type="checkbox" />
+        </label>
+      </section>
+
+      <section class="info-box">
+        <div class="info-label">Última evaluación</div>
+        <div id="lastAnalysis" class="info-value">No disponible</div>
+      </section>
+
+      <footer class="footer-actions">
+        <button id="openHelp" class="secondary-btn" type="button">Ayuda</button>
+      </footer>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

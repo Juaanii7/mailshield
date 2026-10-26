@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  width: 340px;
+  min-height: 220px;
+  font-family: Arial, sans-serif;
+  background: #f5f8ff;
+  color: #1c1c1c;
+}
+
+.popup-shell {
+  padding: 16px;
+}
+
+.topbar {
+  margin-bottom: 12px;
+}
+
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-badge {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #0b57d0, #36a2ff);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.brand-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.brand-subtitle {
+  font-size: 0.72rem;
+  color: #4b4b4b;
+}
+
+.status-box,
+.info-box,
+.settings-box {
+  border-radius: 12px;
+  background: white;
+  border: 1px solid #dfe7f5;
+  padding: 12px 14px;
+  margin-top: 10px;
+}
+
+.status-label,
+.info-label {
+  font-size: 0.76rem;
+  color: #5a6474;
+  margin-bottom: 6px;
+}
+
+.status-value {
+  font-size: 1.06rem;
+  font-weight: 700;
+  color: #176d3a;
+}
+
+.toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.toggle-row input {
+  width: 18px;
+  height: 18px;
+}
+
+.info-value {
+  font-size: 0.9rem;
+  color: #2b2b2b;
+}
+
+.footer-actions {
+  margin-top: 14px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.secondary-btn {
+  background: #edf3ff;
+  color: #0b57d0;
+  border: none;
+  border-radius: 10px;
+  min-height: 40px;
+  padding: 0 16px;
+  font-weight: 700;
+  cursor: pointer;
+}

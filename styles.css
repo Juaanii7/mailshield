@@ -1,0 +1,151 @@
+.mailshield-panel {
+  position: sticky;
+  bottom: 24px;
+  margin: 14px 16px 20px;
+  z-index: 9999;
+  max-width: 420px;
+  font-family: Arial, sans-serif;
+}
+
+.mailshield-panel-shell {
+  border-radius: 16px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
+  padding: 18px 18px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.mailshield-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.mailshield-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+
+.mailshield-logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0b57d0, #36a2ff);
+  color: white;
+  font-size: 0.95rem;
+}
+
+.mailshield-status {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #1f1f1f;
+}
+
+.mailshield-summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.mailshield-risk-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border: 1.5px solid currentColor;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.mailshield-score {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #2b2b2b;
+}
+
+.mailshield-alert {
+  display: block;
+  font-size: 1.04rem;
+  font-weight: 700;
+  margin: 10px 0 12px;
+  line-height: 1.5;
+}
+
+.mailshield-section {
+  margin-top: 10px;
+}
+
+.mailshield-section h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  color: #1f1f1f;
+}
+
+.mailshield-section ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: #2b2b2b;
+  line-height: 1.6;
+  font-size: 0.96rem;
+}
+
+.mailshield-section li + li {
+  margin-top: 6px;
+}
+
+.mailshield-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.mailshield-action-btn {
+  appearance: none;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 0.96rem;
+  font-weight: 700;
+  cursor: pointer;
+  min-height: 44px;
+  min-width: 140px;
+}
+
+.mailshield-action-btn.primary {
+  background: #0b57d0;
+  color: white;
+}
+
+.mailshield-action-btn.secondary {
+  background: #ebeef4;
+  color: #1f1f1f;
+}
+
+@media (max-width: 600px) {
+  .mailshield-panel {
+    margin: 12px 10px 16px;
+    max-width: 100%;
+  }
+
+  .mailshield-panel-shell {
+    padding: 14px 14px 12px;
+  }
+
+  .mailshield-action-btn {
+    width: 100%;
+  }
+}
